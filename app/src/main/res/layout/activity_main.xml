@@ -22,7 +22,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="0"
             android:ems="10"
-            android:hint="Value one"
+            android:hint="Value One"
+            
             android:inputType="numberDecimal" />
 
         <EditText
