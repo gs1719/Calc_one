@@ -19,8 +19,12 @@ class MainActivity : AppCompatActivity() {
 
         }
         btnDivision.setOnClickListener {
-        tvResult.text= (intValues(etInput1)/intValues(etInput2)).toString()
-
+            btnAnimate(btnDivision)
+            if (intValues(etInput2) == 0) {
+                tvResult.text = "Divide by zero"
+            } else {
+                tvResult.text = (intValues(etInput1) / intValues(etInput2)).toString()
+            }
         }
         btnMultiply.setOnClickListener {
         tvResult.text= (intValues(etInput1)*intValues(etInput2)).toString()
